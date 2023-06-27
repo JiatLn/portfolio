@@ -1,4 +1,3 @@
-import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 
@@ -6,7 +5,7 @@ const Footer = () => {
   return (
     <footer className='border-t p-4 text-stone-400'>
       <div className='flex items-center justify-center gap-4'>
-        <div className='hover:text-stone-800 cursor-pointer'>PDF resume</div>
+        <a href='/Lin Jiatao CV.pdf' target='_blank' className='hover:text-stone-800 cursor-pointer'>PDF resume</a>
         <span>|</span>
         <Link href={'/projects'} className='hover:text-stone-800 cursor-pointer'>Projects</Link>
         <span>|</span>
