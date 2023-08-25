@@ -11,7 +11,7 @@ export default function Home() {
       url: 'mailto:iamcx33@163.com'
     },
     {
-      name: 'Github', content: 'jiatln',
+      name: 'Github', content: 'https://github.com/jiatln',
       url: 'https://github.com/jiatln'
     },
     {
@@ -34,11 +34,19 @@ export default function Home() {
       name: 'Rust', content: 'Cli tools',
     },
     {
-      name: 'Others', content: 'Github, Data visualization',
+      name: 'Others', content: 'Git, Data visualization',
     },
   ]
 
   const works: DescItem[] = [
+    {
+      name: 'Open Source Project & Side Projects (2023.6-Present)',
+      job: 'Freelance & Front-end Web Developer',
+      content: [
+        'Developed a open source project, which is a rust crate for working with colors and color spaces.',
+        'Zero to One development of a React/Next.js web platform for a startup AI company.',
+      ]
+    },
     {
       name: 'Guangzhou Ceprei Certification Center Service Co., Ltd (2020.9-2023.5)',
       job: 'Front-end Web Developer',
@@ -59,7 +67,7 @@ export default function Home() {
   return (
     <main className='flex flex-col p-6 gap-4 mx-auto max-w-[900px]'>
       <h1 className='font-bold text-4xl'>Digital Résumé</h1>
-      <h2 className='text-2xl'>Lin Jiatao - Front-end Web Developer</h2>
+      <h2 className='text-2xl'>Jiatao Lin - Front-end Web Developer</h2>
       <section>
         <DescriptionMap items={links} type="links" />
       </section>
@@ -71,7 +79,7 @@ export default function Home() {
         <SectionTitle>Projects</SectionTitle>
         <p>
           <span>Checkout my latest </span>
-          <Link href={'/projects'} className="text-orange-400">projects</Link>
+          <Link href={'https://jiatln.vercel.app/project'} target="_blank" className="text-orange-400">projects</Link>
         </p>
       </section>
       <section>
